@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { View, StyleSheet, Pressable, Text, TextInput} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
-
 
 function welcome () {
     const navigation = useNavigation();
@@ -22,13 +20,13 @@ function welcome () {
 
     return (
         <View style={styles.outerContainer}>
-            <Text style={styles.header}>Hello</Text>
+            <Text style={styles.header}>Hello from Welcome Screen</Text>
 
             <View style={styles.mainContainer}>
 
                 <TextInput
                     style = {styles.input}
-                    placeholder = "Username"
+                    placeholder = "Username or Email"
                     value = {username}
                     onChangeText = {setUsername}
                 />
