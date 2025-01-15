@@ -25,10 +25,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
 
-    <Stack.Navigator initialRouteName="Welcome" >
-      <Stack.Screen name="Welcome" component={Welcome} options={{ headerShown: false }} />
-      <Stack.Screen name="BottomNav" component={BottomNav} />
-      <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+    <Stack.Navigator >
+      <Stack.Screen name="Welcome" component={Welcome} options={{headerShown: false}} />
     </Stack.Navigator>
   );
 };
