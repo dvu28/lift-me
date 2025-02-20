@@ -14,8 +14,8 @@ function homeScreen () {
     const [selectedDate, setSelectedDate] = useState('');
     return (
         <View style={styles.outerContainer}>
-            <Text>This is from Home Screen</Text>
-            <Calendar
+            <View style={styles.calendarContainer}>
+                <Calendar
                 onDayPress={day => {
                 console.log('selected day', day);
                 setSelectedDate(day.dateString);
@@ -44,15 +44,16 @@ function homeScreen () {
                     textDayFontFamily: 'sans-serif',
                     textMonthFontFamily: 'sans-serif',
                     textDayHeaderFontFamily: 'sans-serif',
-                    textDayFontWeight: '550',
+                    textDayFontWeight: '550', 
                     textMonthFontWeight: 'bold',
                     textDayHeaderFontWeight: '500',
                     textDayFontSize: 16,
                     textMonthFontSize: 16,
                     textDayHeaderFontSize: 15
                 }}
-            />
-    </View>
+                />
+            </View>
+        </View>
         
     );
 };
@@ -61,6 +62,10 @@ const styles = StyleSheet.create({
     outerContainer: {
         flex: 1,
         backgroundColor: '#ffffff',
+    },
+
+    calendarContainer: {
+        paddingTop: 55,
     },
 });
 

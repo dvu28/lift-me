@@ -28,7 +28,16 @@ export default function RootLayout() {
           headerShown: false, // Hides the header for the index screen
         }}
         />
+
+      <Stack.Screen
+        name="homeScreen"
+        options={{
+          headerShown: false, // Hides the header for the index screen
+        }}
+        />
       </Stack>
+
+      
       </TamaguiProvider>
   );
 }

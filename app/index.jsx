@@ -14,8 +14,8 @@ import '@tamagui/core/reset.css';
 
 import Welcome from './welcome';
 import BottomNav from './bottomNav'
-
 import ProfileScreen from './profileScreen'
+import Home from './homeScreen'
 
 const tamaguiConfig = createTamagui(config)
 
